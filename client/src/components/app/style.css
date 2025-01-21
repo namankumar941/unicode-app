@@ -1,0 +1,26 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-gap: 3px 3px;
+  height: 50vh;
+  width: 50vw;
+  column-gap: 0.2cm;
+  background-color: rgb(64, 249, 55);
+}
+
+.row {
+  row-gap: 0.2cm;
+}
+body {
+  margin: 40px 60px;
+  background-color: rgb(64, 249, 55);
+}
+.online {
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: underline;
+}

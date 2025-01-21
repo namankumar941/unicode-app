@@ -1,0 +1,83 @@
+.blockButton {
+  position: relative; 
+  cursor: pointer;
+  width: 140px;       
+  height: 65px;      
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  text-align: center;
+  background-color: lightgray;
+  border: 1px solid #ccc;
+  border-radius: 5px; /* Optional: rounded corners */
+  overflow: hidden;   /* Ensures child elements don't overflow */
+}
+
+.buttonRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.header {
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: underline;
+}
+.input {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border: 1px solid #140101;
+}
+
+
+.buttonClass {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.corner-text {
+  position: absolute;
+  top: 5px;  /* Distance from the top */
+  left: 5px; /* Distance from the left */
+  font-size: 12px;
+  color: black;
+}
+
+.center-text {
+  font-size: 16px; 
+  font-weight: bold;
+  color: #b50606;
+}
+
+.popup-container {
+  position: fixed; /* Ensures popup stays on top of all other content */
+  top: 50%;        /* Center vertically */
+  left: 50%;      /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust for centering */
+  background-color: white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 1000; /* Ensure it appears above other elements */
+}
+
+/* Modal backdrop */
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+  z-index: 999; /* Must be lower than the popup container's z-index */
+} 
